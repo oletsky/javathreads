@@ -1,5 +1,10 @@
 package javatraining.oletsky.threads;
 
+/**
+ * @author O.Oletsky
+ * Illustrates that call of the run() method
+ * doesn't start a thread
+ */
 public class ManyRuns {
     public static void main(String[] args) throws InterruptedException {
         Thread t1 = new VerboseThread();
