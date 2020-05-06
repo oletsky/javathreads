@@ -17,5 +17,6 @@ public class DemoDaemons {
             t.start();
         }
         Thread.sleep(10000);
+        System.out.println("Application finished");
     }
 }
