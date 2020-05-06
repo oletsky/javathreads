@@ -4,6 +4,8 @@ package javatraining.oletsky.threads;
  * @author O.Oletsky
  * Illustrates that call of the run() method
  * doesn't start a thread
+ * For true multithreading calls of run()
+ * should be replaced by calls of start()
  */
 public class ManyRuns {
     public static void main(String[] args) throws InterruptedException {
