@@ -9,7 +9,7 @@ public class MethodCallTester {
         ThreadWithAMethod t = new ThreadWithAMethod();
         t.start();
         Thread.sleep(1000);
-        t.reply();
+        t.reply(false);
 
     }
 }

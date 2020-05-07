@@ -10,16 +10,20 @@ package javatraining.oletsky.threads;
 public class ThreadWithAMethod extends Thread{
     int q;
 
-    public void reply() {
-        System.out.println(
-                Thread.currentThread()+" replies"
-        );
+    public void reply(boolean inside) {
+        if (inside) {
+            System.out.println(
+                    Thread.currentThread() + " replies"
+            );
+        }
+
+        else throw new RuntimeException("Deliberately thrown");
     }
 
     @Override
     public void run() {
         while(true) {
-            this.reply();
+            this.reply(true);
             try {
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
